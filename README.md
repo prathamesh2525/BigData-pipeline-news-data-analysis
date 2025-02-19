@@ -1,42 +1,43 @@
-# 🌐 News Scraper & Spark Word Count 📊
 
-## 🚀 Project Overview
+# 🌐 News Analysis with Spark Word Count 📊  
 
-Welcome to the **News Scraper & Spark Word Count** project! 🎉
+## 🚀 Project Overview  
 
-This project scrapes news articles from multiple websites, process the text with **Apache Spark**,
-and find out the **most trending topics** based on the most frequent words. 
-It’s perfect for identifying hot topics in the world right now!
+Welcome to the **News Analysis with Spark Word Count** project! 🎉  
 
-Here’s what this project does:
-- Scrapes **news articles** from multiple sources .
-- Saves the scraped data in **HDFS** (Hadoop Distributed File System).
-- Processes the data using **Apache Spark** to perform a **word count** (a.k.a. trending topics).
-- Outputs the results back into **HDFS** for easy access.
+This project analyzes news articles from multiple sources, processes the text with **Apache Spark**,  
+and identifies the **most trending topics** based on word frequency.  
+It helps uncover the hottest topics in the news world right now!  
 
-Let’s get started with scraping some news and counting those words!
+### Here’s what this project does:  
+- Uses **pre-collected (secondary) news data** instead of scraping.  
+- Stores the dataset in **HDFS** (Hadoop Distributed File System).  
+- Processes the data using **Apache Spark** to perform a **word count** (to identify trending topics).  
+- Saves the results back to **HDFS** for easy access.  
 
----
-
-## 💡 Technologies Used
-
-This project is powered by:
-
-- **Python**: For scraping the web and processing the data.
-- **Apache Spark**: For running the data processing in a distributed environment.
-- **Hadoop HDFS**: For storing the scraped data and results.
-- **BeautifulSoup**: For scraping the web pages.
-- **Requests**: For sending HTTP requests to fetch news articles.
-- **PySpark**: For running Spark jobs in Python.
+Let’s analyze some news and discover the most discussed topics!  
 
 ---
 
-## 🛠️ Prerequisites
+## 💡 Technologies Used  
 
-Before running the project, you will need the following software installed:
+This project is powered by:  
 
-- **Python 3.x**
-- **Apache Hadoop** (HDFS)
-- **Apache Spark** (for data processing)
-- **Java 8+** (required for Spark)
-- **pip** (Python package installer)
+- **Python**: For data processing.  
+- **Apache Spark**: For running distributed data processing.  
+- **Hadoop HDFS**: For storing the dataset and results.  
+- **PySpark**: For executing Spark jobs in Python.  
+
+---
+
+## 🛠️ Prerequisites  
+
+Before running the project, ensure you have the following installed:  
+
+- **Python 3.x**  
+- **Apache Hadoop** (HDFS)  
+- **Apache Spark** (for data processing)  
+- **Java 8+** (required for Spark)  
+- **pip** (Python package installer)  
+
+Now, let’s dive into the analysis! 🚀
