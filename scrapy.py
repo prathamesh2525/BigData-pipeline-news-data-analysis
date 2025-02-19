@@ -39,14 +39,10 @@ for url in urls:
 
 text_data = scraped_data
 
-# Convert the data into an RDD (Resilient Distributed Dataset) for distributed processing
 rdd = spark.sparkContext.parallelize(text_data)
 
-# Define the HDFS path to store the text files (adjust based on Hadoop setup)
 hdfs_path = "hdfs://namenode_host:9000/user/hadoop/news_articles_text/"  # Define the Path of hadoop directory 
 
-# Save the RDD as text files in HDFS
 rdd.saveAsTextFile(hdfs_path)
-
 
 spark.stop()
